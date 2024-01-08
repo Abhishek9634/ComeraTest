@@ -6,23 +6,26 @@
 //
 
 import XCTest
+import NetworkService
+import Combine
 
 final class ComeraTestUnitTests: XCTestCase {
 
+    private var cancellables = Set<AnyCancellable>()
+    
+    private var apiClient: APIClient {
+        return APIClientResolver.shared.apiClient
+    }
+    
+    private var timeoutIntervalForRequest: TimeInterval {
+        3.0
+    }
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        APIClientResolver.shared.mode = .mock
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
     func testPerformanceExample() throws {
@@ -32,4 +35,31 @@ final class ComeraTestUnitTests: XCTestCase {
         }
     }
 
+    func testArticlesAPI() {
+        let apiExpectation = expectation(description: "Articles API Completion Expectation")
+        let router = NewsRouter.mostPopularArticles(days: 7)
+        apiClient.request(request: router.urlRequest, type: ArticleResponse.self)
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    XCTFail(error.message)
+                case .finished:
+                    apiExpectation.fulfill()
+                }
+            } receiveValue: { response in
+                XCTAssertNotNil(response)
+            }
+            .store(in: &cancellables)
+        wait(for: [apiExpectation], timeout: timeoutIntervalForRequest)
+    }
+}
+
+extension XCTestCase {
+    func waitShortTime(
+        _ seconds: TimeInterval = 2,
+        reason: String = "Wait short time"
+    ) {
+        let exp = expectation(description: reason)
+        let _ = XCTWaiter.wait(for: [exp], timeout: seconds)
+    }
 }

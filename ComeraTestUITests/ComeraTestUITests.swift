@@ -39,3 +39,13 @@ final class ComeraTestUITests: XCTestCase {
         }
     }
 }
+
+extension XCTestCase {
+    func waitShortTime(
+        _ seconds: TimeInterval = 2,
+        reason: String = "Wait short time"
+    ) {
+        let exp = expectation(description: reason)
+        let _ = XCTWaiter.wait(for: [exp], timeout: seconds)
+    }
+}

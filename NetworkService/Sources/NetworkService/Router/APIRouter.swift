@@ -25,7 +25,7 @@ public enum HTTPMethod: String {
     var value: String { rawValue }
 }
 
-extension APIRouter {
+public extension APIRouter {
     var timeout: TimeInterval { 60 }
     
     var urlRequest: URLRequest {
