@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F1ABB4B2B4C83330080834A /* ComeraTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ComeraTest.xctestplan; sourceTree = "<group>"; };
 		9F503D8A2B4C645C001DCD10 /* ArticleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsView.swift; sourceTree = "<group>"; };
 		9F503D8C2B4C64EA001DCD10 /* ArticleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewModel.swift; sourceTree = "<group>"; };
 		9F503D922B4C73C3001DCD10 /* ComeraTestUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeraTestUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +179,7 @@
 		9FEF18212B4B35C8009995C9 = {
 			isa = PBXGroup;
 			children = (
+				9F1ABB4B2B4C83330080834A /* ComeraTest.xctestplan */,
 				9F8447172B4B36C3003B6DCB /* Packages */,
 				9FEF182C2B4B35C8009995C9 /* ComeraTest */,
 				9F503D932B4C73C3001DCD10 /* ComeraTestUnitTests */,

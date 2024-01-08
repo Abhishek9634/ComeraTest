@@ -1,4 +1,4 @@
-# Comera Assignment: iOS UIKit Application
+# Comera Assignment: iOS SwiftUI Application
 
 Comera iOS application task as mentioned in memtioned in mail.
 
@@ -6,7 +6,7 @@ Comera iOS application task as mentioned in memtioned in mail.
 
 1. [Environment Dependencies](#environment-dependencies)
 2. [Project Setup](#project-setup)
-3. [Tests](#tests)
+3. [Tests & Code Coverage](#tests--code-coverage)
 4. [Notes](#notes)
 5. [Sample View](#sample-view)
 
@@ -22,7 +22,7 @@ Comera iOS application task as mentioned in memtioned in mail.
 1. Checkout or download Zip.
 2. Unzip it and run on `Xcode 14.3` atleast
 
-## Tests
+## Tests & Code Coverage
 
 There are two test files
 
@@ -30,6 +30,10 @@ There are two test files
 2. `ComeraTestUITests.swift`
 
 Run `cmd + U` to run all test.
+
+Code Coverage Reports
+
+<img src="./Images/CodeCoverage.png" width="600"/>
 
 ## Notes
 

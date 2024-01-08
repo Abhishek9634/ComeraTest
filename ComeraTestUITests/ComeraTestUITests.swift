@@ -38,6 +38,26 @@ final class ComeraTestUITests: XCTestCase {
         app.scrollViews.images.firstMatch.swipeDown()
         elementsQuery.buttons["Full Article"].tap()
     }
+    
+    func testArticlesFilters() throws {
+        waitShortTime(2)
+                
+        let elementsQuery = app.scrollViews.otherElements
+        elementsQuery.staticTexts["By Chelsia Rose Marcius, Robin Shulman Agüeros and Ana Ley"].tap()
+        app.navigationBars["Article"].buttons["Articles"].tap()
+        
+        let filterButton = app.navigationBars["Articles"].buttons["Filter"]
+        filterButton.tap()
+        
+        waitShortTime(1)
+        let elementsQuery2 = app.scrollViews.otherElements
+        elementsQuery2.buttons["Yesterday"].tap()
+        filterButton.tap()
+        
+        waitShortTime(1)
+        elementsQuery2.buttons["30 Days"].tap()
+        elementsQuery.staticTexts.firstMatch.swipeUp()
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {

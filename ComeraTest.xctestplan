@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "5DA394C1-C3E7-4C08-AAD8-B3ED5F2DCE8C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ComeraTest.xcodeproj",
+      "identifier" : "9FEF18292B4B35C8009995C9",
+      "name" : "ComeraTest"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ComeraTest.xcodeproj",
+        "identifier" : "9F503D912B4C73C3001DCD10",
+        "name" : "ComeraTestUnitTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ComeraTest.xcodeproj",
+        "identifier" : "9F503D9E2B4C73D5001DCD10",
+        "name" : "ComeraTestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
