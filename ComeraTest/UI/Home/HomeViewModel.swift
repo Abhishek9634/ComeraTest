@@ -12,6 +12,7 @@ import NetworkService
 typealias Article = NetworkService.Article
 
 final class HomeViewModel: ObservableObject {
+    @Published var articleDetailsViewModel: ArticleDetailsViewModel?
     @Published private(set) var articles: [Article] = []
     @Published var isLoading = false
     @Published var currentFilter = Days.lastWeek
@@ -40,6 +41,10 @@ final class HomeViewModel: ObservableObject {
                 self?.articles = response.articles
             }
             .store(in: &cancellables)
+    }
+    
+    func onTapArticle(article: Article) {
+        articleDetailsViewModel = ArticleDetailsViewModel(article: article)
     }
 }
 

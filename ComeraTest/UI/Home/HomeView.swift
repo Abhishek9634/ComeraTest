@@ -15,7 +15,10 @@ struct HomeView: View {
             parentView
                 .navigationTitle("Articles")
                 .loader(isLoading: $viewModel.isLoading)
-                .onAppear {
+                .segue(viewModel: $viewModel.articleDetailsViewModel) {
+                    ArticleDetailsView(viewModel: $0)
+                }
+                .viewDidLoad {
                     viewModel.fetchArticles()
                 }
         }
@@ -33,7 +36,7 @@ struct HomeView: View {
                     .padding(.horizontal, 16)
                     .background(Color.white)
                     .onTapGesture {
-                        //
+                        viewModel.onTapArticle(article: model)
                     }
                 }
             }

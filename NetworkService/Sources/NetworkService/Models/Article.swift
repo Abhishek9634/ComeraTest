@@ -84,4 +84,8 @@ public extension Article {
     var imageUrl: URL? {
         iconImageUrl(urlPath: metaData.last?.url)
     }
+    
+    var webUrl: URL? {
+        URL(string: url)
+    }
 }
