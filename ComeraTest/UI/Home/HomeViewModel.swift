@@ -66,7 +66,7 @@ final class HomeViewModel: ObservableObject {
         showBottomSheet.toggle()
     }
     
-    func fetchArticles(days: Days) {
+    private func fetchArticles(days: Days) {
         self.isLoading = true
         apiClient.getPopularNews(days: days.value)
             .sink { [weak self] result in
@@ -74,7 +74,7 @@ final class HomeViewModel: ObservableObject {
                 case .finished:
                     break
                 case .failure(let error):
-                    print(error.localizedDescription)
+                    print(error)
                 }
                 self?.isLoading = false
             } receiveValue: { [weak self] response in
