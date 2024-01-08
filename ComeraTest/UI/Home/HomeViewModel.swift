@@ -9,8 +9,11 @@ import Combine
 import Foundation
 import NetworkService
 
+typealias Article = NetworkService.Article
+
 final class HomeViewModel: ObservableObject {
     @Published private(set) var articles: [Article] = []
+    @Published var isLoading = false
     @Published var currentFilter = Days.lastWeek
     
     private var apiClient: APIClient {
@@ -23,16 +26,18 @@ final class HomeViewModel: ObservableObject {
     }
     
     func fetchArticles() {
+        self.isLoading = true
         apiClient.getPopularNews(days: currentFilter.value)
-            .sink { result in
+            .sink { [weak self] result in
                 switch result {
                 case .finished:
                     break
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
-            } receiveValue: { response in
-                print(response)
+                self?.isLoading = false
+            } receiveValue: { [weak self] response in
+                self?.articles = response.articles
             }
             .store(in: &cancellables)
     }

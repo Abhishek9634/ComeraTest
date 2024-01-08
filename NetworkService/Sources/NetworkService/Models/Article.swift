@@ -67,3 +67,21 @@ public struct MediaMetaData: Decodable {
     public let width: Int
     public let height: Int
 }
+
+public extension Article {
+    private func iconImageUrl(urlPath: String?) -> URL? {
+        guard let path = urlPath,
+              let url = URL(string: path) else {
+            return nil
+        }
+        return url
+    }
+    
+    var iconUrl: URL? {
+        iconImageUrl(urlPath: metaData.first?.url)
+    }
+    
+    var imageUrl: URL? {
+        iconImageUrl(urlPath: metaData.last?.url)
+    }
+}
