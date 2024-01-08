@@ -1,19 +1,11 @@
 //
-//  APIClient.swift
+//  APIClientResolver.swift
 //  
 //
 //  Created by Abhishek Thapliyal on 08/01/24.
 //
 
-import Combine
-
-public protocol Mockable {
-    static var json: String { get }
-}
-
-public protocol APIClient {
-    func request<Output>(type: Output.Type) -> AnyPublisher<Output, APIError> where Output: Decodable & Mockable
-}
+import Foundation
 
 public final class APIClientResolver {
     public static let shared = APIClientResolver()

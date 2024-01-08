@@ -9,15 +9,18 @@ let package = Package(
     products: [
         .library(
             name: "NetworkService",
-            targets: ["NetworkService"]),
+            targets: ["NetworkService"]
+        ),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "NetworkService",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "NetworkServiceTests",
-            dependencies: ["NetworkService"]),
+            dependencies: ["NetworkService"]
+        ),
     ]
 )

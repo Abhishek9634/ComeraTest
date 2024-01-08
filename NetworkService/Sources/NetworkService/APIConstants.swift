@@ -8,5 +8,6 @@
 import Foundation
 
 public struct APIConstants {
-	public static let githubUrl = ""
+	public static let baseUrl = "http://api.nytimes.com"
+    static let apiKey = "uGLgVUmsUIjYj9hPXN1x1vJWU1Dqs1yI"
 }

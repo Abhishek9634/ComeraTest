@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		9F8447142B4B367E003B6DCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8447132B4B367E003B6DCB /* Preview Assets.xcassets */; };
+		9F84471F2B4B38DE003B6DCB /* View+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84471A2B4B38DE003B6DCB /* View+Helpers.swift */; };
+		9F8447212B4B38DE003B6DCB /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84471C2B4B38DE003B6DCB /* LoaderView.swift */; };
+		9F8447222B4B38DE003B6DCB /* Navigation+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84471D2B4B38DE003B6DCB /* Navigation+Helper.swift */; };
+		9F8447232B4B38DE003B6DCB /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84471E2B4B38DE003B6DCB /* AsyncImageView.swift */; };
+		9F8447262B4B4F35003B6DCB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8447252B4B4F35003B6DCB /* HomeViewModel.swift */; };
+		9F8447292B4B52B5003B6DCB /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 9F8447282B4B52B5003B6DCB /* NetworkService */; };
 		9FEF182E2B4B35C8009995C9 /* ComeraTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF182D2B4B35C8009995C9 /* ComeraTestApp.swift */; };
-		9FEF18302B4B35C8009995C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF182F2B4B35C8009995C9 /* ContentView.swift */; };
+		9FEF18302B4B35C8009995C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF182F2B4B35C8009995C9 /* HomeView.swift */; };
 		9FEF18322B4B35C9009995C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEF18312B4B35C9009995C9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F8447132B4B367E003B6DCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F8447182B4B36C3003B6DCB /* NetworkService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkService; sourceTree = "<group>"; };
+		9F84471A2B4B38DE003B6DCB /* View+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Helpers.swift"; sourceTree = "<group>"; };
+		9F84471C2B4B38DE003B6DCB /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		9F84471D2B4B38DE003B6DCB /* Navigation+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Navigation+Helper.swift"; sourceTree = "<group>"; };
+		9F84471E2B4B38DE003B6DCB /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		9F8447252B4B4F35003B6DCB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9F84472A2B4B54EC003B6DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9FEF182A2B4B35C8009995C9 /* ComeraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComeraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEF182D2B4B35C8009995C9 /* ComeraTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeraTestApp.swift; sourceTree = "<group>"; };
-		9FEF182F2B4B35C8009995C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FEF182F2B4B35C8009995C9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9FEF18312B4B35C9009995C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -27,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8447292B4B52B5003B6DCB /* NetworkService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +65,7 @@
 		9F8447162B4B36AC003B6DCB /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9FEF182F2B4B35C8009995C9 /* ContentView.swift */,
+				9F8447242B4B4F28003B6DCB /* Home */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -65,12 +78,40 @@
 			name = Packages;
 			sourceTree = "<group>";
 		};
+		9F8447192B4B38DE003B6DCB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F84471A2B4B38DE003B6DCB /* View+Helpers.swift */,
+				9F84471C2B4B38DE003B6DCB /* LoaderView.swift */,
+				9F84471D2B4B38DE003B6DCB /* Navigation+Helper.swift */,
+				9F84471E2B4B38DE003B6DCB /* AsyncImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F8447242B4B4F28003B6DCB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF182F2B4B35C8009995C9 /* HomeView.swift */,
+				9F8447252B4B4F35003B6DCB /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9F8447272B4B52B5003B6DCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FEF18212B4B35C8009995C9 = {
 			isa = PBXGroup;
 			children = (
 				9F8447172B4B36C3003B6DCB /* Packages */,
 				9FEF182C2B4B35C8009995C9 /* ComeraTest */,
 				9FEF182B2B4B35C8009995C9 /* Products */,
+				9F8447272B4B52B5003B6DCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +126,8 @@
 		9FEF182C2B4B35C8009995C9 /* ComeraTest */ = {
 			isa = PBXGroup;
 			children = (
+				9F84472A2B4B54EC003B6DCB /* Info.plist */,
+				9F8447192B4B38DE003B6DCB /* Helpers */,
 				9F8447162B4B36AC003B6DCB /* UI */,
 				9F8447152B4B36A3003B6DCB /* Application */,
 				9FEF183B2B4B3623009995C9 /* Resources */,
@@ -117,6 +160,9 @@
 			dependencies = (
 			);
 			name = ComeraTest;
+			packageProductDependencies = (
+				9F8447282B4B52B5003B6DCB /* NetworkService */,
+			);
 			productName = ComeraTest;
 			productReference = 9FEF182A2B4B35C8009995C9 /* ComeraTest.app */;
 			productType = "com.apple.product-type.application";
@@ -171,8 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FEF18302B4B35C8009995C9 /* ContentView.swift in Sources */,
+				9FEF18302B4B35C8009995C9 /* HomeView.swift in Sources */,
+				9F8447222B4B38DE003B6DCB /* Navigation+Helper.swift in Sources */,
+				9F8447262B4B4F35003B6DCB /* HomeViewModel.swift in Sources */,
+				9F8447212B4B38DE003B6DCB /* LoaderView.swift in Sources */,
+				9F84471F2B4B38DE003B6DCB /* View+Helpers.swift in Sources */,
 				9FEF182E2B4B35C8009995C9 /* ComeraTestApp.swift in Sources */,
+				9F8447232B4B38DE003B6DCB /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +354,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ComeraTest/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComeraTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,6 +386,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ComeraTest/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComeraTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +430,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F8447282B4B52B5003B6DCB /* NetworkService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FEF18222B4B35C8009995C9 /* Project object */;
 }
