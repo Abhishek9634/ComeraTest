@@ -18,8 +18,18 @@ struct HomeView: View {
                 .segue(viewModel: $viewModel.articleDetailsViewModel) {
                     ArticleDetailsView(viewModel: $0)
                 }
-                .viewDidLoad {
-                    viewModel.fetchArticles()
+                .showAlert(
+                    alertModel: viewModel.alertModel!,
+                    presentationStyle: .bottomSheet(titleVisibility: .visible),
+                    isPresented: $viewModel.showBottomSheet
+                )
+                .toolbar {
+                    Button {
+                        viewModel.openBottomSheet()
+                    } label: {
+                        Image(systemName: "line.3.horizontal.decrease.circle")
+                            .padding()
+                    }
                 }
         }
     }

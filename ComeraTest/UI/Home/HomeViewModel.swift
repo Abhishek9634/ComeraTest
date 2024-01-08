@@ -16,19 +16,59 @@ final class HomeViewModel: ObservableObject {
     @Published private(set) var articles: [Article] = []
     @Published var isLoading = false
     @Published var currentFilter = Days.lastWeek
+    @Published var showBottomSheet = false
     
     private var apiClient: APIClient {
         APIClientResolver.shared.apiClient
     }
     
+    private(set) var alertModel: AlertModel?
+    
     private var cancellables = Set<AnyCancellable>()
     
     init() {
+        alertModel = .init(
+            title: "Days",
+            message: nil,
+            buttons: [
+                AlertButton(
+                    title: "Yesterday",
+                    action: { [weak self] in
+                        self?.currentFilter = .yesterday
+                    }
+                ),
+                AlertButton(
+                    title: "7 Days",
+                    action: { [weak self] in
+                        self?.currentFilter = .lastWeek
+                    }
+                ),
+                AlertButton(
+                    title: "30 Days",
+                    action: { [weak self] in
+                        self?.currentFilter = .lastMonth
+                    }
+                )
+            ]
+        )
+        
+        $currentFilter
+            .sink { [weak self] days in
+                guard let self else {
+                    return
+                }
+                fetchArticles(days: days)
+            }
+            .store(in: &cancellables)
     }
     
-    func fetchArticles() {
+    func openBottomSheet() {
+        showBottomSheet.toggle()
+    }
+    
+    func fetchArticles(days: Days) {
         self.isLoading = true
-        apiClient.getPopularNews(days: currentFilter.value)
+        apiClient.getPopularNews(days: days.value)
             .sink { [weak self] result in
                 switch result {
                 case .finished:
