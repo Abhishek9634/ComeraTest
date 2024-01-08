@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9F503D8B2B4C645C001DCD10 /* ArticleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F503D8A2B4C645C001DCD10 /* ArticleDetailsView.swift */; };
 		9F503D8D2B4C64EA001DCD10 /* ArticleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F503D8C2B4C64EA001DCD10 /* ArticleDetailsViewModel.swift */; };
+		9F503D952B4C73C3001DCD10 /* ComeraTestUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F503D942B4C73C3001DCD10 /* ComeraTestUnitTests.swift */; };
+		9F503DA22B4C73D5001DCD10 /* ComeraTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F503DA12B4C73D5001DCD10 /* ComeraTestUITests.swift */; };
+		9F503DA42B4C73D5001DCD10 /* ComeraTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F503DA32B4C73D5001DCD10 /* ComeraTestUITestsLaunchTests.swift */; };
 		9F8447142B4B367E003B6DCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8447132B4B367E003B6DCB /* Preview Assets.xcassets */; };
 		9F84471F2B4B38DE003B6DCB /* View+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84471A2B4B38DE003B6DCB /* View+Helpers.swift */; };
 		9F8447212B4B38DE003B6DCB /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84471C2B4B38DE003B6DCB /* LoaderView.swift */; };
@@ -21,9 +24,31 @@
 		9FEF18322B4B35C9009995C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEF18312B4B35C9009995C9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9F503D962B4C73C3001DCD10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FEF18222B4B35C8009995C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FEF18292B4B35C8009995C9;
+			remoteInfo = ComeraTest;
+		};
+		9F503DA52B4C73D5001DCD10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FEF18222B4B35C8009995C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FEF18292B4B35C8009995C9;
+			remoteInfo = ComeraTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9F503D8A2B4C645C001DCD10 /* ArticleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsView.swift; sourceTree = "<group>"; };
 		9F503D8C2B4C64EA001DCD10 /* ArticleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewModel.swift; sourceTree = "<group>"; };
+		9F503D922B4C73C3001DCD10 /* ComeraTestUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeraTestUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F503D942B4C73C3001DCD10 /* ComeraTestUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeraTestUnitTests.swift; sourceTree = "<group>"; };
+		9F503D9F2B4C73D5001DCD10 /* ComeraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F503DA12B4C73D5001DCD10 /* ComeraTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeraTestUITests.swift; sourceTree = "<group>"; };
+		9F503DA32B4C73D5001DCD10 /* ComeraTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeraTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F8447132B4B367E003B6DCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F8447182B4B36C3003B6DCB /* NetworkService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkService; sourceTree = "<group>"; };
 		9F84471A2B4B38DE003B6DCB /* View+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Helpers.swift"; sourceTree = "<group>"; };
@@ -39,6 +64,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F503D8F2B4C73C3001DCD10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F503D9C2B4C73D5001DCD10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FEF18272B4B35C8009995C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +96,23 @@
 				9F503D8C2B4C64EA001DCD10 /* ArticleDetailsViewModel.swift */,
 			);
 			path = ArticleDetails;
+			sourceTree = "<group>";
+		};
+		9F503D932B4C73C3001DCD10 /* ComeraTestUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F503D942B4C73C3001DCD10 /* ComeraTestUnitTests.swift */,
+			);
+			path = ComeraTestUnitTests;
+			sourceTree = "<group>";
+		};
+		9F503DA02B4C73D5001DCD10 /* ComeraTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F503DA12B4C73D5001DCD10 /* ComeraTestUITests.swift */,
+				9F503DA32B4C73D5001DCD10 /* ComeraTestUITestsLaunchTests.swift */,
+			);
+			path = ComeraTestUITests;
 			sourceTree = "<group>";
 		};
 		9F8447122B4B367E003B6DCB /* Preview Content */ = {
@@ -124,6 +180,8 @@
 			children = (
 				9F8447172B4B36C3003B6DCB /* Packages */,
 				9FEF182C2B4B35C8009995C9 /* ComeraTest */,
+				9F503D932B4C73C3001DCD10 /* ComeraTestUnitTests */,
+				9F503DA02B4C73D5001DCD10 /* ComeraTestUITests */,
 				9FEF182B2B4B35C8009995C9 /* Products */,
 				9F8447272B4B52B5003B6DCB /* Frameworks */,
 			);
@@ -133,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				9FEF182A2B4B35C8009995C9 /* ComeraTest.app */,
+				9F503D922B4C73C3001DCD10 /* ComeraTestUnitTests.xctest */,
+				9F503D9F2B4C73D5001DCD10 /* ComeraTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +221,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9F503D912B4C73C3001DCD10 /* ComeraTestUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F503D982B4C73C3001DCD10 /* Build configuration list for PBXNativeTarget "ComeraTestUnitTests" */;
+			buildPhases = (
+				9F503D8E2B4C73C3001DCD10 /* Sources */,
+				9F503D8F2B4C73C3001DCD10 /* Frameworks */,
+				9F503D902B4C73C3001DCD10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F503D972B4C73C3001DCD10 /* PBXTargetDependency */,
+			);
+			name = ComeraTestUnitTests;
+			productName = ComeraTestUnitTests;
+			productReference = 9F503D922B4C73C3001DCD10 /* ComeraTestUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F503D9E2B4C73D5001DCD10 /* ComeraTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F503DA72B4C73D5001DCD10 /* Build configuration list for PBXNativeTarget "ComeraTestUITests" */;
+			buildPhases = (
+				9F503D9B2B4C73D5001DCD10 /* Sources */,
+				9F503D9C2B4C73D5001DCD10 /* Frameworks */,
+				9F503D9D2B4C73D5001DCD10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F503DA62B4C73D5001DCD10 /* PBXTargetDependency */,
+			);
+			name = ComeraTestUITests;
+			productName = ComeraTestUITests;
+			productReference = 9F503D9F2B4C73D5001DCD10 /* ComeraTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9FEF18292B4B35C8009995C9 /* ComeraTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FEF18382B4B35C9009995C9 /* Build configuration list for PBXNativeTarget "ComeraTest" */;
@@ -191,6 +287,14 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					9F503D912B4C73C3001DCD10 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9FEF18292B4B35C8009995C9;
+					};
+					9F503D9E2B4C73D5001DCD10 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9FEF18292B4B35C8009995C9;
+					};
 					9FEF18292B4B35C8009995C9 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -210,11 +314,27 @@
 			projectRoot = "";
 			targets = (
 				9FEF18292B4B35C8009995C9 /* ComeraTest */,
+				9F503D912B4C73C3001DCD10 /* ComeraTestUnitTests */,
+				9F503D9E2B4C73D5001DCD10 /* ComeraTestUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F503D902B4C73C3001DCD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F503D9D2B4C73D5001DCD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FEF18282B4B35C8009995C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +347,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F503D8E2B4C73C3001DCD10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F503D952B4C73C3001DCD10 /* ComeraTestUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F503D9B2B4C73D5001DCD10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F503DA22B4C73D5001DCD10 /* ComeraTestUITests.swift in Sources */,
+				9F503DA42B4C73D5001DCD10 /* ComeraTestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FEF18262B4B35C8009995C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,7 +382,90 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9F503D972B4C73C3001DCD10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FEF18292B4B35C8009995C9 /* ComeraTest */;
+			targetProxy = 9F503D962B4C73C3001DCD10 /* PBXContainerItemProxy */;
+		};
+		9F503DA62B4C73D5001DCD10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FEF18292B4B35C8009995C9 /* ComeraTest */;
+			targetProxy = 9F503DA52B4C73D5001DCD10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9F503D992B4C73C3001DCD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishek.test.ComeraTestUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComeraTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComeraTest";
+			};
+			name = Debug;
+		};
+		9F503D9A2B4C73C3001DCD10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishek.test.ComeraTestUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComeraTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComeraTest";
+			};
+			name = Release;
+		};
+		9F503DA82B4C73D5001DCD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishek.test.ComeraTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComeraTest;
+			};
+			name = Debug;
+		};
+		9F503DA92B4C73D5001DCD10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishek.test.ComeraTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComeraTest;
+			};
+			name = Release;
+		};
 		9FEF18362B4B35C9009995C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,6 +647,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F503D982B4C73C3001DCD10 /* Build configuration list for PBXNativeTarget "ComeraTestUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F503D992B4C73C3001DCD10 /* Debug */,
+				9F503D9A2B4C73C3001DCD10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F503DA72B4C73D5001DCD10 /* Build configuration list for PBXNativeTarget "ComeraTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F503DA82B4C73D5001DCD10 /* Debug */,
+				9F503DA92B4C73D5001DCD10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9FEF18252B4B35C8009995C9 /* Build configuration list for PBXProject "ComeraTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
